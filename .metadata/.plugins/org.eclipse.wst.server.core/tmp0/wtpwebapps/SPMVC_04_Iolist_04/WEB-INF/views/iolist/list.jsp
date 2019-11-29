@@ -50,7 +50,7 @@ margin: 10px auto;
 
 		$(".content-body").click(function(e) {
 			// id에 설정된 값을 가져오기
-			let d_code = $(this).attr("data-id")
+			let id = $(this).attr("data-id")
 			let name =$(this).attr("data-name")
 			//alert(d_code)
 			/*

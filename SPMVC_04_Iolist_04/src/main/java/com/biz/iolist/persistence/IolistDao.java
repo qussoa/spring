@@ -11,6 +11,6 @@ public interface IolistDao {
 
 	public int insert(IolistDTO dto);
 
-	public IolistDTO findBySeq(long io_seq);
+	public IolistVO findBySeq(long io_seq);
 
 }

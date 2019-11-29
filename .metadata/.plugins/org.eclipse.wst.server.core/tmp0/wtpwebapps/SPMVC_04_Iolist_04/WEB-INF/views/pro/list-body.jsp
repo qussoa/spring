@@ -32,10 +32,17 @@
 			} else {
 				$("#io_price", opener.document).val(strOPrice)
 			}
-
+			
+			let price = $("#io_price", opener.document).val()
+			let qty = $("#io_qty", opener.document).val()
+			$("#io_total", opener.document).val(
+				parseInt(price)* parseInt(qty)	
+				
+			)
+			
 			window.close()
 			//IE 때문에 쓸때없이 쓰는 코드
-			window.open("about:blank", "_self").slef.close()
+			window.open("about:blank", "_self").self.close()
 		})
 	})
 </script>

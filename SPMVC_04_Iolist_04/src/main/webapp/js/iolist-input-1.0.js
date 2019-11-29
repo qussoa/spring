@@ -1,5 +1,39 @@
 $(function() {
 
+	var calc = function() {
+		let price = parseInt($("#io_price").val())
+		let qty = parseInt($("#io_qty").val())
+		
+		let total = price * qty
+		$("#io_total").val(total)
+	}
+
+	$("#btn-save").click(function() {
+		
+		let dCode = $("#io_dcode").val()
+		if(dCode == ""){
+			alert("거래처코드가 비어있음")
+			$("#io_dcode").focus()
+			return false
+		}
+		let pCode = $("#io_pcode").val()
+		if(pCode == ""){
+			alert("상품코드가 비어있음")
+			$("#io_pcode").focus()
+			return false
+		}
+		
+		
+		if(confirm("저장할까요?")){
+			$("form").submit()
+		}
+	})
+	
+	
+	
+	$("#io_price").on("change keyup paste input propertychange",calc)
+	$("#io_qty").on("change keyup paste input propertychange",calc)
+	
 	// 입력박스에서 enter 키방지
 	$("#io_dcode").keypress(function(e) {
 		if (e.keyCode == 13) {

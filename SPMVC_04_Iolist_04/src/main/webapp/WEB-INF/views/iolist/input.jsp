@@ -10,7 +10,7 @@
 <title>□□□ 나의 JSP page □□□</title>
 <%@ include file="/WEB-INF/views/include/include-css.jspf"%>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="${rootPath}/js/iolist-input-1.0.js?ver=2019-11-30-002"></script>
+<script src="${rootPath}/js/iolist-input-1.0.js?ver=2019-11-30-005"></script>
 <script>
 	var rootPath =  "${pageContext.request.contextPath}"
 </script>

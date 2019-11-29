@@ -36,15 +36,14 @@ p#insert {
 
 		$(".content-body").click(function(e) {
 			// id에 설정된 값을 가져오기
-			let d_code = $(this).attr("id")
-			alert(d_code)
+			let id = $(this).attr("id")
+			
 			/*
 				현재페이지를 /dept/view를 전환하라
 				주소창에 /dept/view를 입력하여 서버에 전송
 				// id 변수 값을 싫어서 보내라
 			 */
-			document.location.href = "${rootPath}/dept/view?d_code=" + d_code
-		})
+			document.location.href = "${rootPath}/iolist/view?id=" + id		})
 		// 현재 보고 있는 화면의 scrollTop값을 추출
 		// 변수에 임시 보관
 		var preScroll = $(window).scrollTop();

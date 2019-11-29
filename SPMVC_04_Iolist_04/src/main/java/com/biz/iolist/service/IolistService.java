@@ -34,9 +34,9 @@ public class IolistService {
 		return 0;
 	}
 
-	public IolistDTO findBySeq(long io_seq) {
+	public IolistVO findBySeq(long io_seq) {
 
-		IolistDTO dto = dao.findBySeq(io_seq);
-		return dto;
+		IolistVO vo = dao.findBySeq(io_seq);
+		return vo;
 	}
 }
