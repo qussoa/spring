@@ -1,0 +1,54 @@
+
+11월 11, 2019 10:38:09.99 NEW SESSION
+11월 11, 2019 10:38:09.99 
+11월 11, 2019 10:38:09.99 KLIB_SelfTest return : KLR_OK
+11월 11, 2019 12:22:46.46 [12512:5904:1111/122246.460:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 11, 2019 12:49:53.54 [12512:12444:1111/124953.542:ERROR:get_updates_processor.cc(246)] PostClientToServerMessage() failed during GetUpdates
+11월 11, 2019 12:51:38.48 
+11월 11, 2019 12:51:38.48 KLIB_SelfTest return : KLR_OK
+
+11월 14, 2019 09:48:53.44 NEW SESSION
+11월 14, 2019 09:48:53.44 
+11월 14, 2019 09:48:53.44 KLIB_SelfTest return : KLR_OK
+11월 14, 2019 10:11:46.03 
+11월 14, 2019 10:11:46.03 KLIB_SelfTest return : KLR_OK
+11월 14, 2019 10:12:22.82 
+11월 14, 2019 10:12:22.82 KLIB_SelfTest return : KLR_OK
+11월 14, 2019 10:23:47.84 
+11월 14, 2019 10:23:47.84 KLIB_SelfTest return : KLR_OK
+11월 14, 2019 10:24:19.56 
+11월 14, 2019 10:24:19.56 KLIB_SelfTest return : KLR_OK
+11월 14, 2019 10:25:44.63 
+11월 14, 2019 10:25:44.63 KLIB_SelfTest return : KLR_OK
+11월 14, 2019 11:10:18.15 
+11월 14, 2019 11:10:18.15 KLIB_SelfTest return : KLR_OK
+11월 14, 2019 12:45:53.70 
+11월 14, 2019 12:45:53.70 KLIB_SelfTest return : KLR_OK
+
+11월 21, 2019 11:28:34.29 NEW SESSION
+11월 21, 2019 11:28:34.29 
+11월 21, 2019 11:28:34.29 KLIB_SelfTest return : KLR_OK
+11월 21, 2019 11:39:52.25 
+11월 21, 2019 11:39:52.25 KLIB_SelfTest return : KLR_OK
+11월 21, 2019 12:20:47.11 [6776:8668:1121/122047.113:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 21, 2019 12:59:17.01 
+11월 21, 2019 12:59:17.01 KLIB_SelfTest return : KLR_OK
+
+11월 26, 2019 16:33:52.10 NEW SESSION
+11월 26, 2019 16:33:52.10 
+11월 26, 2019 16:33:52.10 KLIB_SelfTest return : KLR_OK
+
+11월 27, 2019 12:11:10.87 NEW SESSION
+11월 27, 2019 12:11:10.87 [6364:8092:1127/121110.847:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 27, 2019 12:42:06.52 [6364:6368:1127/124206.524:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+11월 27, 2019 14:08:35.59 [6364:6368:1127/140835.596:ERROR:CONSOLE(0)] "Failed to set referrer policy: The value '' is not one of 'no-referrer', 'no-referrer-when-downgrade', 'origin', 'origin-when-cross-origin', 'same-origin', 'strict-origin', 'strict-origin-when-cross-origin', or 'unsafe-url'. The referrer policy has been left unchanged.", source: https://www.webdesignrankings.com/resources/lolcolors/ (0)
+11월 27, 2019 14:49:47.69 [6364:6368:1127/144947.694:ERROR:CONSOLE(0)] "Failed to set referrer policy: The value '' is not one of 'no-referrer', 'no-referrer-when-downgrade', 'origin', 'origin-when-cross-origin', 'same-origin', 'strict-origin', 'strict-origin-when-cross-origin', or 'unsafe-url'. The referrer policy has been left unchanged.", source: https://www.webdesignrankings.com/resources/lolcolors/ (0)
+
+11월 29, 2019 11:04:50.08 NEW SESSION
+11월 29, 2019 11:04:50.08 
+11월 29, 2019 11:04:50.08 KLIB_SelfTest return : KLR_OK
+11월 29, 2019 12:22:35.38 [9580:8376:1129/122235.387:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 29, 2019 12:39:02.51 [9580:9104:1129/123902.514:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+11월 29, 2019 12:39:02.92 [9580:8376:1129/123902.922:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+11월 29, 2019 13:11:42.12 
+11월 29, 2019 13:11:42.12 KLIB_SelfTest return : KLR_OK

@@ -1,0 +1,14 @@
+package com.biz.student.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+@Controller
+public class MemberController {
+
+	public String list(Model model) {
+		model.addAttribute("BODY", "DEPT-LIST");
+		return "home";
+	}
+
+}

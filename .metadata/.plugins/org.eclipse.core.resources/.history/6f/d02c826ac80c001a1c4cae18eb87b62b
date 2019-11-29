@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="rootPath" value="${pageContext.request.contextPath}" />
+
+<p></p>
+<p></p>
+<p></p>
+<style>
+table {
+	/*
+      table 표시할 때 
+      table의 바깥쪽 라인과 각 칼럼의 
+      라인간의 간격을 없애고자 할때
+      표를 실선모양으로 외부라인 설정
+    */
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin : 20px auto;
+	/* border : 1px solid blue;
+       border : 1px dotted blue; 
+    */
+}
+	/*
+      table row에 마우스가 위치하면
+      바탕색을 gray로 설정
+      마우스 커서를 손가락 모양으로 
+    */
+table tr {
+	border: 1px dashed red;
+}
+
+table tr:hover {
+	background-color: silver;
+	cursor: pointer;
+}
+</style>
+
+	<table>
+		<tr>
+			<td>번호</td>
+			<td>이름</td>
+			<td>학과</td>
+			<td>학년</td>
+			<td>교수</td>
+		</tr>
+	<c:forEach items="${STDLIST}" var="dto">
+	<tr>
+	<td>${dto.st_num}</td>
+	<td>${dto.st_name}</td>
+	<td>${dto.st_dept}</td>
+	<td>${dto.st_grade}</td>
+	<td>${dto.st_pro}</td>
+	</tr>
+	</c:forEach>
+</table>
+
+
+	
+

@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>□□□ 나의 JSP page □□□</title>
+<style>
+header {
+	background-color: white;
+	coler: gray;
+	margin: 0;
+	padding: 1rem;
+}
+
+nav nl {
+	display: flex;
+	background-color: gray;
+	color: white;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h3>학사정보</h3>
+	</header>
+	<nav>
+		<ul>
+			<li>
+			<a href="#">학생정보</a> 
+			<a href="#">학과정보</a> 
+			<a href="#">수강신청</a>
+			<a href="#">로그인</a> 
+			<a href="#">회원가입</a>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

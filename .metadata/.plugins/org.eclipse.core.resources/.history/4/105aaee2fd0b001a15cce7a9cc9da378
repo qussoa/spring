@@ -1,0 +1,5 @@
+package com.biz.student.controller;
+
+public class StudentController {
+
+}
