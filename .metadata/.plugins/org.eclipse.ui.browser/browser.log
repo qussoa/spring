@@ -52,3 +52,5 @@
 11월 29, 2019 12:39:02.92 [9580:8376:1129/123902.922:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
 11월 29, 2019 13:11:42.12 
 11월 29, 2019 13:11:42.12 KLIB_SelfTest return : KLR_OK
+11월 29, 2019 15:53:31.46 
+11월 29, 2019 15:53:31.46 KLIB_SelfTest return : KLR_OK
