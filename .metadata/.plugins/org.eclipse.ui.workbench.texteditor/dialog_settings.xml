@@ -14,6 +14,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="&#x09;&#x09;&#x09;&lt;td&gt;SQ&lt;/td&gt;"/>
 			<item value="&#x09;&lt;context:component-scan base-package=&quot;com.biz.student.controller&quot; /&gt;"/>
 		</list>
 		<list key="replacehistory">

@@ -1,3 +1,2 @@
 #Tomcat publish data
-#Mon Dec 02 16:30:32 KST 2019
-org.eclipse.jst.jee.server\:/binary\:C\:\\bizwork\\jdk_3rd\\repo\\org\\springframework\\spring-web\\5.1.11.RELEASE\\spring-web-5.1.11.RELEASE.jar=WEB-INF/lib/spring-web-5.1.11.RELEASE.jar
+#Tue Dec 03 16:07:39 KST 2019

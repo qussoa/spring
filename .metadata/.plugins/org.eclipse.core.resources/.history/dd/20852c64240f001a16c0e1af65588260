@@ -1,5 +1,0 @@
-package com.biz.student.persistence;
-
-public interface StudentDao {
-
-}
