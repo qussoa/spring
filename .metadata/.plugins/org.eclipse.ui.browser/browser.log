@@ -58,3 +58,11 @@
 12월 03, 2019 09:15:23.19 NEW SESSION
 12월 03, 2019 09:15:23.19 
 12월 03, 2019 09:15:23.19 KLIB_SelfTest return : KLR_OK
+
+12월 04, 2019 11:03:34.93 NEW SESSION
+12월 04, 2019 11:03:34.93 
+12월 04, 2019 11:03:34.93 KLIB_SelfTest return : KLR_OK
+12월 04, 2019 12:20:11.65 [6684:10852:1204/122011.658:ERROR:socket_stream.cc(218)] Closing stream with result -2
+12월 04, 2019 12:36:27.54 [6684:8852:1204/123627.543:ERROR:get_updates_processor.cc(246)] PostClientToServerMessage() failed during GetUpdates
+12월 04, 2019 14:26:39.06 
+12월 04, 2019 14:26:39.07 KLIB_SelfTest return : KLR_OK
