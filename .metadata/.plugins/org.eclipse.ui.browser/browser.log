@@ -66,3 +66,15 @@
 12월 04, 2019 12:36:27.54 [6684:8852:1204/123627.543:ERROR:get_updates_processor.cc(246)] PostClientToServerMessage() failed during GetUpdates
 12월 04, 2019 14:26:39.06 
 12월 04, 2019 14:26:39.07 KLIB_SelfTest return : KLR_OK
+
+12월 06, 2019 11:44:46.44 NEW SESSION
+12월 06, 2019 11:44:46.44 
+12월 06, 2019 11:44:46.45 KLIB_SelfTest return : KLR_OK
+12월 06, 2019 11:46:05.72 
+12월 06, 2019 11:46:05.72 KLIB_SelfTest return : KLR_OK
+12월 06, 2019 12:21:06.40 [7460:1460:1206/122106.403:ERROR:socket_stream.cc(218)] Closing stream with result -2
+12월 06, 2019 12:30:35.64 [7460:9868:1206/123035.646:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+12월 06, 2019 13:09:03.74 
+12월 06, 2019 13:09:03.74 KLIB_SelfTest return : KLR_OK
+12월 06, 2019 16:48:29.73 
+12월 06, 2019 16:48:29.73 KLIB_SelfTest return : KLR_OK

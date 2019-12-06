@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="Mocoji"/>
 <aop-project name="SPMVC_03_Student_03"/>
-<aop-project name="SpMVC_05_Memo_05_join_02"/>
+<aop-project name="SpMVC_06_Naver"/>
 </aop-reference-model>
