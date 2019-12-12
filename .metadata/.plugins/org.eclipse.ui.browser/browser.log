@@ -89,3 +89,6 @@
 12월 10, 2019 12:23:23.54 [7264:7376:1210/122323.529:ERROR:socket_stream.cc(218)] Closing stream with result -2
 12월 10, 2019 16:42:17.15 
 12월 10, 2019 16:42:17.16 KLIB_SelfTest return : KLR_OK
+
+12월 12, 2019 13:14:27.91 NEW SESSION
+12월 12, 2019 13:14:27.91 [12820:12500:1212/131427.887:ERROR:socket_stream.cc(218)] Closing stream with result -2
