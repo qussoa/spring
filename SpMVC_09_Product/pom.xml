@@ -12,7 +12,7 @@
 	<!-- dependency에 설정한 항목중에 공식 maven repository에서 가져오지 못하는 3rd part가 있으면 여기 
 		설정된 주소에서 검색하여 가져와라 만약 여기도 없으면 포기 -->
 	<repositories>
-	 	<repository>
+		<repository>
 			<id>oracle-rep-1</id>
 			<url>http://maven.icm.edu.pl/artifactory/repo/</url>
 		</repository>
@@ -52,6 +52,13 @@
 			<version>5.2.2.RELEASE</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
 		<dependency>
@@ -65,7 +72,7 @@
 			<artifactId>commons-dbcp2</artifactId>
 			<version>2.7.0</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/com.oracle/ojdbc6 -->
 		<dependency>
 			<groupId>com.oracle</groupId>
