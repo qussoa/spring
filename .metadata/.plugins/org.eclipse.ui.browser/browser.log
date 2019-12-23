@@ -92,3 +92,6 @@
 
 12월 12, 2019 13:14:27.91 NEW SESSION
 12월 12, 2019 13:14:27.91 [12820:12500:1212/131427.887:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+12월 23, 2019 14:14:58.20 NEW SESSION
+12월 23, 2019 14:14:58.20 [8612:7224:1223/141458.198:ERROR:socket_stream.cc(218)] Closing stream with result -2
