@@ -95,3 +95,9 @@
 
 12월 23, 2019 14:14:58.20 NEW SESSION
 12월 23, 2019 14:14:58.20 [8612:7224:1223/141458.198:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+12월 31, 2019 12:23:25.63 NEW SESSION
+12월 31, 2019 12:23:25.63 [9572:2228:1231/122325.505:ERROR:socket_stream.cc(218)] Closing stream with result -2
+12월 31, 2019 12:23:27.06 [9572:2228:1231/122327.064:ERROR:socket_stream.cc(218)] Closing stream with result -2
+12월 31, 2019 12:23:55.82 [9572:2228:1231/122355.826:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+12월 31, 2019 12:23:56.32 [9572:2228:1231/122356.324:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
