@@ -37,6 +37,10 @@ table.list tr, table.list td, table.list th {
 	border: 1px solid gray;
 	padding: 5px;
 }
+/* 취소선 */
+.line-through{
+text-decoration: line-through;
+}
 </style>
 </head>
 <body>
@@ -77,7 +81,7 @@ table.list tr, table.list td, table.list th {
 						<tr>
 							<td>${index.count}</td>
 							<td>${todo.tdFlag}</td>
-							<td>${todo.tdSubject}</td>
+							<td <c:if test="${todo.tdComplete == 'Y'}"> class="line-through"</c:if>>${todo.tdSubject}</td>
 							<td>
 							<a href="${rootPath}/complete?tdSeq=${todo.tdSeq}&tdComplete=${todo.tdComplete}">
 							${todo.tdComplete}
