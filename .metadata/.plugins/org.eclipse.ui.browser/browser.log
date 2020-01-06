@@ -106,3 +106,8 @@
 1월 02, 2020 12:19:14.38 [4184:11076:0102/121914.073:ERROR:socket_stream.cc(218)] Closing stream with result -2
 1월 02, 2020 12:19:19.64 [4184:11076:0102/121919.643:ERROR:socket_stream.cc(218)] Closing stream with result -2
 1월 02, 2020 12:21:55.51 [4184:11076:0102/122155.518:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+
+1월 06, 2020 12:20:57.07 NEW SESSION
+1월 06, 2020 12:20:57.07 [3800:4784:0106/122056.997:ERROR:socket_stream.cc(218)] Closing stream with result -2
+1월 06, 2020 12:20:58.53 [3800:4784:0106/122058.535:ERROR:socket_stream.cc(218)] Closing stream with result -2
+1월 06, 2020 12:24:26.84 [3800:4784:0106/122426.848:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
