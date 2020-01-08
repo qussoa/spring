@@ -15,6 +15,8 @@ C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\21374540
 \SpMVC_05_Memo_03_login\src\main\java
 C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2426377400.index
 \SPMVC_04_Iolist_03\src\main\java
+C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\401382457.index
+\SpMVC_13_ImgGalleryV3\src\main\java
 C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1340743697.index
 \SpMVC_12_ToDoList\src\main\java
 C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\947398716.index
@@ -45,8 +47,12 @@ C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\34264867
 \SpMVC_05_Memo_04_join\src\main\java
 C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2270819046.index
 \SPMVC_03_Student_02\src\main\java
+C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3531342194.index
+\SpMVC_13_ImgGalleryV3\src\main\java
 C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4123783171.index
 \SpMVC_11_ProductV3\src\main\java
+C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1111506374.index
+\SpMVC_13_ImgGalleryV3\src\main\java
 C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\127390845.index
 \SPMVC_03_Student_02\src\main\java
 C:\bizwork\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3142882860.index
