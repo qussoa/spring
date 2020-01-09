@@ -86,9 +86,19 @@ $(function() {
 	
 	$("btn-login").click(function() {
 		
+		// 유효성 검사 
+		// id, password가 입력되지 않았을 때 경고
+		let u_id = $("#u_id").val()
+		if(u_id == ""){
+			alert("아이디를 입력하시오")
+			$("#u_id").focus()
+			return false;
+		}
+		
+		/*
 		var params = $("form").serialize();
 		$.ajax({
-			url : "${rootPath}/member/login",
+			url : "${rootPath}/rest/member/login",
 			type : 'POST',
 			data: params,
 			dataType:'json',
@@ -97,14 +107,16 @@ $(function() {
 			}
 		})
 		
-		/*
-		$.post("${rootPath}/member/login",
-			{$("form").serialize()},
-			function(result) {
-				alert(result)
-			}
-		})
 		*/
+		$.post("${rootPath}/rest/member/login",
+			$("form").serialize(),
+			function(result) {
+			alert(result)
+			document.location.href = document.location.href	
+			//alert(result)
+			}
+		)
+		
 	})
 })
 </script>
@@ -125,8 +137,8 @@ $(function() {
 	<c:if test="${LOGIN_MSG == '0'}">
 		<h3>welcome sign-in</h3>
 	</c:if>
-	<input type="text" name="u_id" placeholder="USER ID"> <input
-		type="password" name="u_password" placeholder="USER PW">
+	<input type="text" id="u_id" name="u_id" placeholder="USER ID"> <input
+		type="password" id="u_password" name="u_password" placeholder="USER PW">
 	<button type="submit" id="btn-login">LOGIN</button>
 	<button type="button" id="btn-join">JOIN</button>
 </form>

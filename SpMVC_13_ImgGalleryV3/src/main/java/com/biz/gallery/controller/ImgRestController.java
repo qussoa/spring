@@ -9,8 +9,10 @@ import java.net.URLEncoder;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,10 +22,12 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.biz.gallery.domain.ImageFilesVO;
 import com.biz.gallery.domain.ImageVO;
+import com.biz.gallery.domain.MemberVO;
 import com.biz.gallery.repository.ImageDao;
 import com.biz.gallery.repository.ImageFileDao;
 import com.biz.gallery.service.FileService;
 import com.biz.gallery.service.ImageFileService;
+import com.biz.gallery.service.MemberService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -36,14 +40,17 @@ public class ImgRestController {
 	private final ImageFileService ifService;
 	private final ImageDao imDao;
 	private final ImageFileDao ifDao;
+	private final MemberService mService;
 
 	@Autowired
-	public ImgRestController(FileService fService, ImageFileService ifService, ImageDao imDao, ImageFileDao ifDao) {
+	public ImgRestController(FileService fService, ImageFileService ifService, ImageDao imDao, ImageFileDao ifDao,
+			MemberService mService) {
 		super();
 		this.fService = fService;
 		this.ifService = ifService;
 		this.imDao = imDao;
 		this.ifDao = ifDao;
+		this.mService = mService;
 	}
 
 	@RequestMapping(value = "/file_up", method = RequestMethod.POST, produces = "text/html;charset=UTF-8")
@@ -57,6 +64,8 @@ public class ImgRestController {
 			return upLoadFileName;
 
 	}
+
+	
 
 	/*
 	 * fileDownload 1. 단순히 파일을 클릭했을 때 링크를 주고 다운로드하는 방법 서버에 저장된 파일이름으로 그대로 다운로드가 되고
@@ -157,6 +166,20 @@ public class ImgRestController {
 		int ret = imDao.update(imageVO);
 
 		return ret + "";
+	}
+	// ${rootPath}/rest/member/login
+	@RequestMapping(value = "member/login", method = RequestMethod.POST)
+	public String login(MemberVO memberVO, Model model, HttpSession httpSession) {
+
+
+		memberVO = mService.loginCheck(memberVO);
+		if (memberVO != null) {
+			httpSession.setAttribute("MEMBER", memberVO);
+			return "LOGIN_OK";
+		} else {
+			httpSession.removeAttribute("MEMBER");
+			return "LOGIN_FAIL";
+		}
 	}
 
 }

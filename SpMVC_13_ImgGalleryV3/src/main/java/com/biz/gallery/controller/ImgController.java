@@ -46,12 +46,12 @@ public class ImgController {
 	public String upload(@ModelAttribute("imageVO") ImageVO imageVO, 
 			Model model, HttpSession httpSession) {
 		
-		MemberVO member = (MemberVO) httpSession.getAttribute("MEMBER");
-		if(member == null) {
-			model.addAttribute("MODAL","LOGIN");
-			return "home";
-		}
-		
+//		MemberVO member = (MemberVO) httpSession.getAttribute("MEMBER");
+//		if(member == null) {
+//			model.addAttribute("MODAL","LOGIN");
+//			return "home";
+//		}
+//		
 		log.debug("이미지 업로드 시작");
 
 		imageVO = new ImageVO();
@@ -90,8 +90,16 @@ public class ImgController {
 	 * @PathVariable : path/변수 형식으로 전송하고 변수에서 받기
 	 */
 	@RequestMapping(value = "/update/{img_seq}", method = RequestMethod.GET)
-	public String update(@PathVariable("img_seq") String img_seq, Model model) {
+	public String update(@PathVariable("img_seq") String img_seq, Model model,HttpSession httpSession) {
 
+		// login이 되었는지 확인 검사를 위해
+		// Object 형으로  session객체를 추출
+//		Object memberVO = httpSession.getAttribute("MEMBER");
+//		if(memberVO == null) {
+//			model.addAttribute("MODAL","LOGIN");
+//			return "home";
+//		}
+//		
 		ImageVO imgVO = imService.findBySeq(img_seq);
 
 		model.addAttribute("BODY", "UPLOAD");
@@ -112,8 +120,15 @@ public class ImgController {
 	}
 
 	@RequestMapping(value = "/delete/{img_seq}", method = RequestMethod.GET)
-	public String delete(@PathVariable String img_seq, SessionStatus status, Model model) {
+	public String delete(@PathVariable String img_seq, SessionStatus status,
+			Model model,HttpSession httpSession) {
 
+		Object memberVO = httpSession.getAttribute("MEMBER");
+		if(memberVO == null) {
+			model.addAttribute("MODAL","LOGIN");
+			return "home";
+		}
+		
 		int ret = imService.delete(img_seq);
 
 		status.setComplete();

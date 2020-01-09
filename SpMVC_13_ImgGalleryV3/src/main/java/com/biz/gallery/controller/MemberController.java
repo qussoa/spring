@@ -30,6 +30,11 @@ public class MemberController {
 		return "home";
 	}
 
+	@RequestMapping(value = "/login",method = RequestMethod.GET)
+	public String login() {
+		return "body/login";
+	}
+	
 	@RequestMapping(value = "/join", method = RequestMethod.POST)
 	public String join(MemberVO memberVO, Model model) {
 
@@ -38,7 +43,7 @@ public class MemberController {
 		return "redirect:/image/list";
 	}
 
-	// @ResponseBody
+	//@ResponseBody
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(MemberVO memberVO, Model model, HttpSession httpSession) {
 
@@ -48,10 +53,10 @@ public class MemberController {
 		memberVO = mService.loginCheck(memberVO);
 		if (memberVO != null) {
 			httpSession.setAttribute("MEMBER", memberVO);
-			// return "LOGIN_OK";
+			//return "LOGIN_OK";
 		} else {
 			httpSession.removeAttribute("MEMBER");
-			// return "LOGIN_FAIL";
+			//return "LOGIN_FAIL";
 		}
 		return "redirect:/image/list";
 	}
