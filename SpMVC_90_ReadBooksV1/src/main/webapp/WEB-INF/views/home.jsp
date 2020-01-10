@@ -15,7 +15,7 @@
 
 		$("#btn-search").click(function() {
 			let book = $("#search-box").val()
-			document.location.href = "${rootPath}/book/list?b_name=" + book
+			document.location.href = "${rootPath}/list?b_name=" + book
 		})
 
 	})

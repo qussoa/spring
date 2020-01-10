@@ -7,25 +7,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<c:set var="rootPath" value="${ pageContext.request.contextPath}" />
-
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title>□□□ 나의 JSP page □□□</title>
 <script>
-$(function() {
-	$(".content-body").click(function() {
-		// td들의 목록을 추출하기
-		let td = $(this).children()
-		let strBCode = td.eq(0).text()
-		let strBName = td.eq(1).text()
-//		$(opener.document).find("#b_code").val(strBCode)
-//		$(opener.document).find("#b_name").val(strBName)
-//		window.close()
-		window.open("about:blank", "_new").self.close()
-	})
-})
+	
 </script>
+<style>
+</style>
 </head>
 <body>
 	<header>
@@ -33,6 +22,7 @@ $(function() {
 	</header>
 	<section class="list">
 		<article class="body">
+
 			<table>
 				<tr>
 					<th>ISBN</th>
@@ -42,6 +32,7 @@ $(function() {
 					<th>구입일자</th>
 					<th>구입가격</th>
 				</tr>
+
 				<c:choose>
 					<c:when test="${empty BOOKLIST}">
 						<tr>
@@ -57,12 +48,19 @@ $(function() {
 								<td>${bookDTO.b_comp}</td>
 								<td>${bookDTO.b_year}</td>
 								<td>${bookDTO.b_iprice}</td>
+								<td>
+								<a href="${rootPath}/update?id=${bookDTO.b_code}">수정</a>
+								<a href="${rootPath}/delete?id=${bookDTO.b_code}">삭제</a>
+								</td>
 							</tr>
 						</c:forEach>
+
 					</c:otherwise>
 				</c:choose>
 			</table>
 		</article>
 	</section>
+	<a href="${rootPath}/insert">추가</a>
+
 </body>
 </html>

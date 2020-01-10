@@ -35,4 +35,22 @@ public class BookService {
 		return bList;
 	}
 	
+	public int insert(BookDTO bookDTO) {
+		
+		int ret = bDao.insert(bookDTO);		
+		return ret;
+	}
+	
+	public int delete(String b_code) {
+		int ret = bDao.delete(b_code);
+		return ret;
+	}
+
+	public int update(BookDTO bookDTO) {
+		
+		int ret = bDao.update(bookDTO);
+		
+		return ret;
+	}
+	
 }

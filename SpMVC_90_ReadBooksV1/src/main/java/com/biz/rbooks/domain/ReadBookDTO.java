@@ -16,7 +16,7 @@ import lombok.ToString;
 public class ReadBookDTO {
 	
 	private long rb_seq;	//number
-	private long rb_bcode;	//	varchar2(20 byte)
+	private String rb_bcode;	//	varchar2(20 byte)
 	private String rb_date;	//	varchar2(10 byte)
 	private String rb_stime;	//	varchar2(10 byte)
 	private String rb_rtime;	//	number(10,3)
