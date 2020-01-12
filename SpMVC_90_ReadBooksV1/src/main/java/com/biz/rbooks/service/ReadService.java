@@ -23,9 +23,14 @@ public class ReadService {
 		return readDao.selectAll();
 	}
 
-	public List<ReadBookDTO> findBySeq() {
-		List<ReadBookDTO> readList = readDao.findBySeq();
+	public List<ReadBookDTO> findByRBCode(String rb_bcode) {
+		List<ReadBookDTO> readList = readDao.findByRBCode(rb_bcode);
 		return readList;
+	}
+
+	public int insert(ReadBookDTO readBookDTO) {
+		int ret = readDao.insert(readBookDTO); 
+		return ret; 		
 	}
 	
 }

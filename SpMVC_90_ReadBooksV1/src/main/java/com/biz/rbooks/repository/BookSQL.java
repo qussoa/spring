@@ -42,4 +42,31 @@ public class BookSQL {
 		}.toString();
 
 	}
+
+	public String rbinsert_sql() {
+		return new SQL() {
+			{
+				INSERT_INTO("tbl_read_book");
+
+				INTO_COLUMNS("rb_seq");
+				INTO_COLUMNS("rb_bcode");
+				INTO_COLUMNS("rb_date");
+				INTO_COLUMNS("rb_stime");
+				INTO_COLUMNS("rb_rtime");
+				INTO_COLUMNS("rb_subject");
+				INTO_COLUMNS("tb_text");
+				INTO_COLUMNS("rb_star");
+
+				INTO_VALUES("#{sea_read_book.NEXTVAL}");
+				INTO_VALUES("#{rb_bcode,jdbcType=VARCHAR}");
+				INTO_VALUES("#{rb_date,jdbcType=VARCHAR}");
+				INTO_VALUES("#{rb_stime,jdbcType=VARCHAR}");
+				INTO_VALUES("#{rb_rtime,jdbcType=VARCHAR}");
+				INTO_VALUES("#{rb_subject,jdbcType=VARCHAR}");
+				INTO_VALUES("#{tb_text,jdbcType=VARCHAR}");
+				INTO_VALUES("#{rb_star,jdbcType=VARCHAR}");
+
+			}
+		}.toString();
+	}
 }

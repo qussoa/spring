@@ -49,7 +49,7 @@ public class BookController {
 		bookDTO = new BookDTO();
 
 		model.addAttribute("BODY", "INSERT");
-		model.addAttribute("bookDTO", bookDTO);
+		model.addAttribute("bookDTO", bookDTO); // 왜 있는 코드인가?
 		
 		log.debug(bookDTO.toString());
 		

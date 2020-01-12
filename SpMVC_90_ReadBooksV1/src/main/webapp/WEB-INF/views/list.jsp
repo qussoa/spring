@@ -11,7 +11,24 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title>□□□ 나의 JSP page □□□</title>
 <script>
-	
+	$(function() {
+
+		$(".content-body").click(function(e) {
+			// id에 설정된 값을 가져오기
+			let id = $(this).attr("data-id")
+
+			//alert(d_code)
+			/*
+				현재페이지를 /dept/view를 전환하라
+				주소창에 /dept/view를 입력하여 서버에 전송
+				// id 변수 값을 싫어서 보내라
+			 */
+			document.location.href = "${rootPath}/rblist?rb_bcode=" + id
+		})
+		// 현재 보고 있는 화면의 scrollTop값을 추출
+		// 변수에 임시 보관
+
+	})
 </script>
 <style>
 </style>
@@ -41,23 +58,21 @@
 					</c:when>
 					<c:otherwise>
 						<c:forEach items="${BOOKLIST}" var="bookDTO" varStatus="info">
-							<tr class="content-body" id="${bookDTO.b_code}">
+							<tr class="content-body" data-id="${bookDTO.b_code}">
 								<td>${bookDTO.b_code}</td>
 								<td>${bookDTO.b_name}</td>
 								<td>${bookDTO.b_auther}</td>
 								<td>${bookDTO.b_comp}</td>
 								<td>${bookDTO.b_year}</td>
 								<td>${bookDTO.b_iprice}</td>
-								<td>
-								<a href="${rootPath}/update?id=${bookDTO.b_code}">수정</a>
-								<a href="${rootPath}/delete?id=${bookDTO.b_code}">삭제</a>
-								</td>
+								<td><a href="${rootPath}/update?id=${bookDTO.b_code}">수정</a>
+									<a href="${rootPath}/delete?id=${bookDTO.b_code}">삭제</a></td>
 							</tr>
 						</c:forEach>
-
 					</c:otherwise>
 				</c:choose>
 			</table>
+
 		</article>
 	</section>
 	<a href="${rootPath}/insert">추가</a>

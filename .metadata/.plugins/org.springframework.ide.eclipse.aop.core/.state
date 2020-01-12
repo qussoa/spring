@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="SpMVC_90_ReadBooksV1"/>
-<aop-project name="SpMVC_11_ProductV3"/>
-<aop-project name="SpMVC_11_ProductV5"/>
-<aop-project name="SpMVC_11_ProductV4"/>
-<aop-project name="SPMVC_04_Iolist_02"/>
-<aop-project name="SPMVC_04_Iolist_04"/>
 <aop-project name="SpMVC_12_ToDoListV2"/>
-<aop-project name="SpMVC_13_ImgGalleryV2"/>
+<aop-project name="SPMVC_04_Iolist_04"/>
+<aop-project name="SPMVC_04_Iolist_03"/>
+<aop-project name="SpMVC_05_Memo_04_join_02"/>
+<aop-project name="SpMVC_05_Memo_04_join_03"/>
 <aop-project name="SpMVC_13_ImgGalleryV3"/>
 </aop-reference-model>

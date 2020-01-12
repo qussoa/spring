@@ -13,18 +13,25 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="level"/>
+		<item key="selection" value="memberDTO"/>
 		<list key="findhistory">
+			<item value="MemberDTO"/>
+			<item value="memberDTO"/>
+			<item value="memoDTO"/>
+			<item value="u_"/>
+			<item value="memberdto"/>
+			<item value="data-id"/>
 			<item value="level"/>
 			<item value="&#x09;&#x09;&#x09;&lt;td&gt;SQ&lt;/td&gt;"/>
 			<item value="&#x09;&lt;context:component-scan base-package=&quot;com.biz.student.controller&quot; /&gt;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="m_"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="786"/>
-		<item key="DIALOG_Y_ORIGIN" value="260"/>
+		<item key="DIALOG_X_ORIGIN" value="431"/>
+		<item key="DIALOG_Y_ORIGIN" value="-25"/>
 		<item key="DIALOG_WIDTH" value="288"/>
 		<item key="DIALOG_HEIGHT" value="390"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>

@@ -21,27 +21,46 @@
 	})
 </script>
 <style>
+* {
+ font-family: BinggraeMelona-Bold;
 
+}
+@font-face {
+	font-family: 'BinggraeMelona-Bold';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona-Bold.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+header {
+text-align: center;
+font-size: 30px;
+height: 50px;
+margin: 0 auto;
+}
+ div {
+ text-align: center;
+ justify-content: center;
+ }
 </style>
 <title>bookproject</title>
 </head>
 <body>
 	<header>
-		<h3>도서검색</h3>
+		<h3>책을 찾아줘</h3>
 	</header>
 	<article>
 		<div class="s-box">
 			<form>
 				<input type="text" name="book" id="search-box">
+				<button type="button" id="btn-search">검색</button>
 			</form>
-		</div>
-
-		<div class="b-box">
-			<button type="button" id="btn-search">검색</button>
 		</div>
 	</article>
 	<div>
-		<a href="#">로그인</a><span></span> <a href="#">회원등록</a>
+		<a href="${rootPath}/member/login">로그인</a><span></span> <a href="${rootPath}/member/join">회원등록</a>
 	</div>
 </body>
 </html>

@@ -25,11 +25,9 @@ public interface BookDao {
 	@InsertProvider(type = BookSQL.class,method="insert_sql")
 	public int insert(BookDTO bookDTO);
 
-	@Delete("DELETE FROM tbl_books WHERE b_code = #{b_code}")
+	@Delete("DELETE FROM tbl_books WHERE b_code = #{b_code} ")
 	public int delete(String b_code);
 
 	@UpdateProvider(type = BookSQL.class,method = "update_sql")
 	public int update(BookDTO bookDTO);
-	
-	
 }
